@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wadida Café | Sophisticated Cozy Experience</title>
+  <meta name="description" content="Discover the sensory richness of premium dark roasts and artisanal pastries at Wadida Café. A sophisticated cozy boutique experience.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Navigation Bar -->
+  <header class="navbar-header">
+    <div class="container">
+      <nav class="navbar-nav">
+        <a class="navbar-logo" href="#home" id="nav-logo">
+          Wadida Café 
+        </a>
+
+        <!-- Checkbox hack for mobile menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+        <!-- Hamburger Icon for Mobile -->
+        <label for="menu-toggle" class="menu-toggle-label" id="btn-menu-open">
+          <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+        </label>
+
+        <!-- Navigation Links Container -->
+        <div class="navbar-links" id="nav-links-menu">
+          <!-- Close Icon for Mobile -->
+          <label for="menu-toggle" class="menu-close-label" id="btn-menu-close">
+            <span class="material-symbols-outlined" style="font-size: 28px;">close</span>
+          </label>
+
+          <!-- Label wrapping anchors allows closing the mobile menu on click by toggling the checkbox -->
+          <a href="#home"><label for="menu-toggle">Home</label></a>
+          <a href="#about"><label for="menu-toggle">About</label></a>
+          <a href="#menu"><label for="menu-toggle">Menu</label></a>
+          <a href="#why-choose-us"><label for="menu-toggle">Features</label></a>
+          <a href="#gallery"><label for="menu-toggle">Gallery</label></a>
+          <a href="#testimonials"><label for="menu-toggle">Reviews</label></a>
+          <a href="#contact"><label for="menu-toggle">Contact</label></a>
+          
+          <a href="#contact" class="btn btn-primary btn-book-mobile" style="display: none;"><label for="menu-toggle">Book a Table</label></a>
+        </div>
+
+        <!-- Book a Table Desktop Button -->
+        <div class="navbar-action">
+          <a href="#contact" class="btn btn-primary btn-book">Book a Table</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg">
+        <img alt="Wadida Café Interior" src="images/hero.jpg">
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="display-lg hero-title">Welcome to Wadida Café</h1>
+          <p class="body-lg hero-desc">
+            Discover the sensory richness of premium dark roasts and artisanal pastries in a space designed for unhurried comfort.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary btn-large">
+              View Menu <span class="material-symbols-outlined">restaurant_menu</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-large">
+              Book a Table <span class="material-symbols-outlined">event</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-badge about-badge">Our Story</span>
+            <h2 class="headline-lg about-title">Crafting Moments Since 2012</h2>
+            <div class="body-md about-text">
+              <p>Wadida Café began with a simple dream: to create a sanctuary where the aroma of freshly ground beans and the warmth of a shared conversation take center stage. What started as a small corner shop has blossomed into a destination for those who appreciate the finer details of the coffee craft.</p>
+              <p>Every bean we roast and every pastry we bake is a tribute to our roots, blending traditional brewing techniques with modern sophistication. We invite you to stay a while, breathe in the fragrance, and let us serve you a piece of our heart.</p>
+            </div>
+          </div>
+          <div class="about-image-wrapper order-mobile-first">
+            <div class="about-image-backdrop"></div>
+            <img alt="Barista pouring latte art at Wadida Café" class="about-image" src="images/about.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Popular Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">The Classics</span>
+          <h2 class="headline-lg section-title">Popular Menu</h2>
+          <p class="body-md section-subtitle">Our most loved signature brews and treats</p>
+        </div>
+        <div class="menu-grid">
+          
+          <!-- Espresso -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="Perfect crema shot of Espresso" src="images/espresso.jpg">
+            </div>
+            <span class="menu-badge">Signature Roast</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Espresso</h3>
+              <span class="menu-item-price">$3.50</span>
+            </div>
+            <p class="body-md menu-item-desc">Robust and concentrated shot of our signature dark roast.</p>
+          </article>
+
+          <!-- Cappuccino -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="Velvety Cappuccino cup" src="images/cappuccino.jpg">
+            </div>
+            <span class="menu-badge">Barista Choice</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Cappuccino</h3>
+              <span class="menu-item-price">$4.75</span>
+            </div>
+            <p class="body-md menu-item-desc">Equal parts espresso, steamed milk, and velvety foam.</p>
+          </article>
+
+          <!-- Signature Latte -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="Signature Caffe Latte with leaf art" src="images/latte.jpg">
+            </div>
+            <span class="menu-badge">Best Seller</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Signature Latte</h3>
+              <span class="menu-item-price">$5.25</span>
+            </div>
+            <p class="body-md menu-item-desc">Smooth steamed milk over a double shot of rich espresso.</p>
+          </article>
+
+          <!-- Dark Mocha -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="Decadent Dark Mocha coffee" src="images/mocha.jpg">
+            </div>
+            <span class="menu-badge">Sweet Indulgence</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Dark Mocha</h3>
+              <span class="menu-item-price">$5.50</span>
+            </div>
+            <p class="body-md menu-item-desc">A perfect blend of dark cocoa and our house espresso.</p>
+          </article>
+
+          <!-- Cold Brew -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="12-hour steeped cold brew coffee" src="images/cold-brew.jpg">
+            </div>
+            <span class="menu-badge">Refreshing</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Cold Brew</h3>
+              <span class="menu-item-price">$4.50</span>
+            </div>
+            <p class="body-md menu-item-desc">12-hour steeped cold brew for a smooth, refreshing finish.</p>
+          </article>
+
+          <!-- Artisan Pastries -->
+          <article class="menu-card">
+            <div class="menu-image-container">
+              <img alt="Freshly baked artisan pastries" src="images/pastries.jpg">
+            </div>
+            <span class="menu-badge">Baked Daily</span>
+            <div class="menu-meta">
+              <h3 class="menu-item-title">Artisan Pastries</h3>
+              <span class="menu-item-price">$4.00+</span>
+            </div>
+            <p class="body-md menu-item-desc">Daily selection of freshly baked treats and desserts.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Why Choose Us -->
+    <section class="why-section" id="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Why Wadida</span>
+          <h2 class="headline-lg section-title">The Wadida Standard</h2>
+          <p class="body-md section-subtitle">Uncompromising quality in every cup and interaction</p>
+        </div>
+        <div class="why-grid">
+          
+          <!-- Premium Beans -->
+          <div class="why-card">
+            <div class="why-icon-container">
+              <span class="material-symbols-outlined">coffee</span>
+            </div>
+            <h3 class="why-title">Premium Beans</h3>
+            <p class="why-desc">Ethically sourced, single-origin beans roasted in small batches.</p>
+          </div>
+
+          <!-- Cozy Vibe -->
+          <div class="why-card">
+            <div class="why-icon-container">
+              <span class="material-symbols-outlined">chair</span>
+            </div>
+            <h3 class="why-title">Cozy Vibe</h3>
+            <p class="why-desc">A sophisticated and warm space designed for your absolute comfort.</p>
+          </div>
+
+          <!-- Fast Service -->
+          <div class="why-card">
+            <div class="why-icon-container">
+              <span class="material-symbols-outlined">bolt</span>
+            </div>
+            <h3 class="why-title">Fast Service</h3>
+            <p class="why-desc">Skilled baristas ensuring your coffee is perfect every single time.</p>
+          </div>
+
+          <!-- Fresh Pastries -->
+          <div class="why-card">
+            <div class="why-icon-container">
+              <span class="material-symbols-outlined">bakery_dining</span>
+            </div>
+            <h3 class="why-title">Fresh Pastries</h3>
+            <p class="why-desc">Hand-crafted desserts baked fresh in our kitchen every morning.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Gallery -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Visual Moments</span>
+          <h2 class="headline-lg section-title">Life at Wadida</h2>
+          <p class="body-md section-subtitle">Catch a glimpse of our cozy atmosphere and products</p>
+        </div>
+        <div class="gallery-grid">
+          
+          <div class="gallery-col">
+            <div class="gallery-item aspect-portrait">
+              <img alt="Three different cups of coffee showing latte art" src="images/gallery-1.jpg">
+            </div>
+            <div class="gallery-item aspect-square">
+              <img alt="Espresso cup on marble surface with coffee beans" src="images/gallery-2.jpg">
+            </div>
+          </div>
+          
+          <div class="gallery-col">
+            <div class="gallery-item aspect-square">
+              <img alt="Coffee beans spilling out of a burlap sack" src="images/gallery-3.jpg">
+            </div>
+            <div class="gallery-item aspect-portrait">
+              <img alt="Customer reading a book with steaming coffee" src="images/gallery-4.jpg">
+            </div>
+          </div>
+
+          <div class="gallery-col">
+            <div class="gallery-item aspect-portrait">
+              <img alt="Modern espresso machine steaming wand closeup" src="images/gallery-5.jpg">
+            </div>
+            <div class="gallery-item aspect-square">
+              <img alt="Fruit pastry on ceramic plate with cold brew" src="images/gallery-6.jpg">
+            </div>
+          </div>
+
+          <div class="gallery-col">
+            <div class="gallery-item aspect-square">
+              <img alt="Minimalist Wadida café interior shot" src="images/gallery-7.jpg">
+            </div>
+            <div class="gallery-item aspect-portrait">
+              <img alt="Hands holding a cappuccino cup with heart art" src="images/gallery-8.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonials</span>
+          <h2 class="headline-lg section-title">From Our Guests</h2>
+          <p class="body-md section-subtitle">Here is what our lovely community has to say about us</p>
+        </div>
+        <div class="testimonials-grid">
+          
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <img alt="Portrait of Sarah J." class="testimonial-avatar" src="images/user-1.jpg">
+            <div class="testimonial-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"The best atmosphere in the city. Their Signature Latte is unmatched, and the space is so peaceful for morning reading."</p>
+            <h4 class="testimonial-author">— Sarah J., Graphic Designer</h4>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <img alt="Portrait of James L." class="testimonial-avatar" src="images/user-2.jpg">
+            <div class="testimonial-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Wadida Café feels like home. The attention to detail in their brewing process is something every coffee lover must experience."</p>
+            <h4 class="testimonial-author">— James L., Tech Lead</h4>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <img alt="Portrait of Emily R." class="testimonial-avatar" src="images/user-3.jpg">
+            <div class="testimonial-rating">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Their desserts are heavenly. I come here every weekend for the almond croissant and the excellent hospitality."</p>
+            <h4 class="testimonial-author">— Emily R., Food Blogger</h4>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info">
+            <div>
+              <span class="section-badge" style="background-color: var(--secondary-container); color: var(--primary);">Contact</span>
+              <h2 class="headline-lg contact-title">Get in Touch</h2>
+              <p class="body-md contact-desc">Have a question or want to book our cozy space for a special event? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-info-list">
+              <!-- Address -->
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-icon">location_on</span>
+                <div>
+                  <h4 class="contact-info-title">Address</h4>
+                  <p class="contact-info-desc">123 Espresso Lane, Boutique Quarter, CA 90210</p>
+                </div>
+              </div>
+              
+              <!-- Phone -->
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-icon">call</span>
+                <div>
+                  <h4 class="contact-info-title">Phone</h4>
+                  <p class="contact-info-desc">+1 (555) 234-5678</p>
+                </div>
+              </div>
+              
+              <!-- Hours -->
+              <div class="contact-info-item">
+                <span class="material-symbols-outlined contact-info-icon">schedule</span>
+                <div>
+                  <h4 class="contact-info-title">Opening Hours</h4>
+                  <p class="contact-info-desc">
+                    Mon - Fri: 7:00 AM - 9:00 PM<br>
+                    Sat - Sun: 8:00 AM - 10:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <form action="#" method="POST" class="contact-form">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="full-name">Full Name</label>
+                  <input class="form-control" type="text" id="full-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" type="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input class="form-control" type="text" id="subject" placeholder="How can we help?" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" placeholder="Your message here..." required></textarea>
+              </div>
+              <button class="btn btn-submit" type="submit" id="btn-submit-contact">
+                Send Message <span class="material-symbols-outlined">send</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. Footer -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">Wadida Café</a>
+          <p class="body-md footer-desc">Your daily dose of unhurried premium coffee experiences.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Support</h4>
+          <div class="footer-links">
+            <a href="#contact">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-socials">
+            <a class="footer-social-link" href="#" aria-label="Brand page">
+              <span class="material-symbols-outlined">brand_awareness</span>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Website">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Email support">
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Wadida Café. All rights reserved.</p>
+        <div class="footer-badges">
+          <span class="material-symbols-outlined" title="Coffee shop">local_cafe</span>
+          <span class="material-symbols-outlined" title="Restaurant">restaurant</span>
+          <span class="material-symbols-outlined" title="Baked goods">cake</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

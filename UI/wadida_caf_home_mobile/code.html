@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wadida Café | Sophisticated Cozy Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolling-touch {
+            -webkit-overflow-scrolling: touch;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#827472",
+                        "on-surface-variant": "#504442",
+                        "primary": "#271310",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#201a18",
+                        "primary-fixed": "#ffdad4",
+                        "on-tertiary-fixed-variant": "#0c5216",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary-container": "#6b6360",
+                        "secondary-fixed": "#ece0dc",
+                        "on-tertiary-container": "#60a35c",
+                        "inverse-primary": "#e3beb8",
+                        "primary-container": "#3e2723",
+                        "tertiary-fixed": "#acf4a4",
+                        "surface-bright": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#ece0dc",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed-dim": "#91d78a",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#003508",
+                        "surface-tint": "#745853",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#4c4542",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#ae8d87",
+                        "inverse-surface": "#2f3131",
+                        "error-container": "#ffdad6",
+                        "secondary": "#655d5a",
+                        "on-tertiary-fixed": "#002203",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#001d03",
+                        "outline-variant": "#d3c3c0",
+                        "on-primary-fixed": "#2b1613",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed-dim": "#cfc4c0",
+                        "on-surface": "#1a1c1c",
+                        "on-background": "#1a1c1c",
+                        "primary-fixed-dim": "#e3beb8",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Header Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center px-margin-mobile py-4 max-w-full mx-auto">
+<div class="text-headline-md font-headline-md text-primary tracking-tight">Wadida Café</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-80 transition-all active:scale-95">
+                    Book a Table
+                </button>
+<button class="p-2 text-primary focus:outline-none" id="menu-toggle">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div class="hidden fixed inset-0 bg-surface z-50 flex flex-col p-margin-mobile" id="mobile-menu">
+<div class="flex justify-between items-center mb-8">
+<div class="text-headline-md font-headline-md text-primary tracking-tight">Wadida Café</div>
+<button class="p-2 text-primary" id="menu-close">
+<span class="material-symbols-outlined" style="font-size: 28px;">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-6">
+<a class="text-headline-md font-headline-md text-primary border-b border-outline-variant pb-2" href="#">Home</a>
+<a class="text-headline-md font-headline-md text-on-surface-variant border-b border-outline-variant pb-2" href="#">About</a>
+<a class="text-headline-md font-headline-md text-on-surface-variant border-b border-outline-variant pb-2" href="#">Menu</a>
+<a class="text-headline-md font-headline-md text-on-surface-variant border-b border-outline-variant pb-2" href="#">Gallery</a>
+<a class="text-headline-md font-headline-md text-on-surface-variant border-b border-outline-variant pb-2" href="#">Testimonials</a>
+<a class="text-headline-md font-headline-md text-on-surface-variant border-b border-outline-variant pb-2" href="#">Contact</a>
+</div>
+<div class="mt-auto pb-8">
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-headline-md text-headline-md">
+                    Book a Table
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[751px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A warm and inviting interior of a high-end boutique cafe. The lighting is soft and golden, highlighting rich wooden textures and sophisticated earth-toned decor. A polished espresso machine gleams in the background under soft spotlights. The overall atmosphere is quiet and unhurried, reflecting a premium unhurried lifestyle in a modern setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuges79U137UZQfVP2JvCVA6lPgcn5BBEres8wZe0foyJdkW4amC2jeBSotlUwrZScxPaD4bBWXPtSbP0e5KdIYXvqnru9y-x4K5JphOLpugxMaP0X0IG0U00SWCnawwp-spTfOuoylauHRWL_bMKIFwVXNGymQpQm8Xb2ABJLUvK5PGQSjNilwqRVzX0o6YmeGnQSrzhRK9xsGxR1v2s1V9bkkp2P1BNy6KJXdF4GrrN_XgYRHOoOF8VsGSuYzRip_Pc4EkX0bwk"/>
+<div class="relative z-20 text-center px-margin-mobile">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-white mb-6 drop-shadow-md">
+                    Welcome to Wadida Café
+                </h1>
+<p class="font-body-md text-body-md text-white/90 mb-8 max-w-xs mx-auto">
+                    Experience the sensory richness of premium roasts and artisanal pastries in our cozy, tactile space.
+                </p>
+<div class="flex flex-col gap-4">
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline-md text-headline-md shadow-lg active:scale-95 transition-transform">
+                        Book a Table
+                    </button>
+<button class="w-full bg-white/20 backdrop-blur-md text-white border border-white/30 py-4 rounded-lg font-headline-md text-headline-md active:scale-95 transition-transform">
+                        View Menu
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-xl px-margin-mobile bg-surface">
+<div class="flex flex-col gap-md">
+<div class="relative rounded-xl overflow-hidden shadow-sm h-64">
+<img class="w-full h-full object-cover" data-alt="Close up of a barista skillfully pouring steamed milk into a ceramic cup of dark coffee to create latte art. The setting is a sophisticated and warm cafe environment with soft ambient lighting and earthy tones like deep browns and warm beiges. The visual style is tactile and premium, emphasizing the artisanal craft of coffee making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF1JMuiAr-cVgsromqryP25nDbQDSjEdbPUM-Sz8-umakJE1AqEmTaqtRkc8KSprtAD-qurGJgFrSNIjbCv2x5SUBAlQKGlNXdpVXgpL6KNYf_1a2ftuQbYOdAE-KeSlK7JPdCjK1Kp-C-CnhHlbY8B3Khsn3_wo9g4xKxJZ9I5fFoMoKsdZKP8JHBBP489PLyUKQyDFLBWrL5BzJ5Mj4qXa4sWwJ5hcEIS7Or7x8j0g8Em0EAgsi59TPkbe03RKfiYs2bZGfKMpE"/>
+</div>
+<div class="text-center">
+<span class="text-tertiary-container font-label-md text-label-md uppercase tracking-widest mb-2 block">Our Story</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">A Legacy of Aroma</h2>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                        Wadida Café started with a simple vision: to create a space where time slows down. We source our beans ethically from sustainable farms and roast them in small batches to preserve their unique character. Every cup is a testament to our commitment to quality and comfort.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Popular Menu -->
+<section class="py-xl bg-surface-container-low px-margin-mobile">
+<div class="text-center mb-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Our Classics</h2>
+<p class="text-on-surface-variant font-body-md text-body-md">Hand-crafted favorites curated for your palate.</p>
+</div>
+<div class="grid grid-cols-1 gap-md">
+<!-- Menu Item 1 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/10 flex gap-4">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A perfect latte with intricate art on the surface, served in a handmade ceramic mug. The lighting is warm and natural, casting soft shadows on a rustic wooden table in a high-end cafe. The aesthetic is cozy and sophisticated, using a palette of warm beiges and deep coffee browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5LWYPV5edDOWyand03CamV8KSV6tikhcDRS3bWcxsflYa9WJs8jCeG-1H7j2m5iT_JKMcghlvjrlcudinzI4d9MO7VWd58P073nELbX1y89DYZSQsLM_zzcBE3_SZlEZkBYUNxjFmUEJGbenYsNmjXK8Z8JU5qOW4YrhL7RxHRPI-e9PWdy4j2FsZlvsPPzUeEw0UEEHvoC0A_-HRrjyG1pPgR79c0sBPqQTbvwZ-FblU77A_zvxkT62Iw87in3wU919m6fFL7nE"/>
+</div>
+<div class="flex flex-col justify-center flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-body-lg text-primary">Wadida Signature Latte</h3>
+<span class="text-on-primary-container font-bold">$6.50</span>
+</div>
+<p class="text-on-secondary-container text-label-md leading-tight">Double shot espresso with our house-made almond-macadamia milk blend.</p>
+</div>
+</div>
+<!-- Menu Item 2 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/10 flex gap-4">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A rich, velvety espresso in a small porcelain cup with perfect crema. Set against a dark, textured background with earthy wooden elements. The mood is intense yet comforting, capturing the essence of premium coffee culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXwl2Ywc3IdYaH6TUtF3Zo3DTKUVo_BPF5Etae1i5f2H0bonSulMO62xveEBEGSRwzl383xYeU2BmUK-FK9iuyOwI3zBezc6eW_pAFt37PRA1gL-37-MIrMukvgBXsfhau9BYp1rzlDsw4iQa3xa7f5r2iy0SKqS3fgx4z53M2pdDOeGF8z_Xbf8YRwho4Cz-8wvN6HaY2fIM1UrdA4s56RzI3Aa60qPtBzZYBGaKg1kWOQFXYvrpO17_k2CnXdiLlsD7MmyQlG2s"/>
+</div>
+<div class="flex flex-col justify-center flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-body-lg text-primary">Single Origin Pourover</h3>
+<span class="text-on-primary-container font-bold">$5.75</span>
+</div>
+<p class="text-on-secondary-container text-label-md leading-tight">Rotating seasonal beans with notes of jasmine and stone fruit.</p>
+</div>
+</div>
+<!-- Menu Item 3 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/10 flex gap-4">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Artisanal French pastries, golden and flaky, arranged beautifully on a warm beige platter. The lighting is soft and airy, highlighting the crisp texture of the dough. Sophisticated, minimalist presentation in a boutique cafe setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcWdOOtYT-hfltzFCyWnfsvMINXZxuqNyRR_vck4N6nEQi8UmfTSPrfKCsPPP3CV0TpLtBrDkJU1IxLT4t4EksbW7yKhzOgobXhPHYZ6g5z8DSyFEZThAAdvEhRab3F59mst2Se8WUgwDewnHBAj4d5zZAerjR12K9Vyxq0RIPB4_FnypPdnzsn2tuthtSsf674LIR2jgPslSJlgD0XJ5PNMH_0mHMQ70pV_ljfeZaIOdiGL-h_to36JdtkhFfpgb1SRugARFVRQ4"/>
+</div>
+<div class="flex flex-col justify-center flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-body-lg text-primary">Butter Croissant</h3>
+<span class="text-on-primary-container font-bold">$4.50</span>
+</div>
+<p class="text-on-secondary-container text-label-md leading-tight">Laminated for 72 hours using premium grass-fed French butter.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-center">
+<button class="bg-secondary-container text-primary font-label-md px-8 py-3 rounded-lg active:scale-95 transition-transform">
+                    Explore Full Menu
+                </button>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-xl px-margin-mobile bg-surface">
+<div class="text-center mb-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">The Wadida Way</h2>
+</div>
+<div class="space-y-md">
+<div class="bg-surface-container p-md rounded-xl text-center">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined">coffee_maker</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Ethical Sourcing</h3>
+<p class="text-on-surface-variant text-body-md">We partner directly with farmers to ensure fair wages and the highest crop quality.</p>
+</div>
+<div class="bg-surface-container p-md rounded-xl text-center">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Artisan Roasting</h3>
+<p class="text-on-surface-variant text-body-md">Small-batch roasting in-house every Tuesday to guarantee maximum freshness.</p>
+</div>
+<div class="bg-surface-container p-md rounded-xl text-center">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Sustainable Design</h3>
+<p class="text-on-surface-variant text-body-md">From our compostable cups to our reclaimed wood tables, we care for the earth.</p>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="py-xl bg-surface-container-high px-margin-mobile">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-md text-center">Our Gallery</h2>
+<div class="grid grid-cols-2 gap-2">
+<div class="aspect-square rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist cafe interior featuring white walls, light wood furniture, and several green potted plants. Soft sunlight streams through large windows, creating a bright and serene atmosphere. The style is modern boutique, elegant and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzQeV2gb2d9ogxCv9gvoDneO_Vnm9xt3_wVsm2cElzz4ebxYaQMMbmUg9WWSD7VLyehH_IUeKGSSerjlyszxsMtWVPZDOcIfnSfTE-JA1Al0IdeeuWHfTs8PmBtWefppX-5pJSHpPnPfpUclYMDxbsHkeDjMrkiuSWgUWEUxFcBdynXKxUpYzzvdSAxRz-helexj7sxm9buH2NCkBFxfnL5kKEdYLNnjnu7LTptzZBGKFrsxhiRgPz4lbcDvdhgR2Autb58Xz799I"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Macro shot of roasted coffee beans showing rich textures and deep brown colors with a subtle oily sheen. The lighting is focused and warm, emphasizing the organic quality of the beans. Professional food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrUhGRXMYFG_yDxlcJXiXz7A4G2W5WCmP35GGMtDVwqgAbbjgYPmmZik9nSf7e1fD-Pr987Fok9KraYYJRqosgqhWrLl8jO4bWb9Pb_fdp7I0CB2MSoNWL3kVjmBm_DmkwJ3Xyv3JphMTYmKepNvTY5_DQT7J2IGvEL3UWY86SaB8aEJ5mD8-Z7B686WpDt2OFc2h9VW1SPKIS2INrf03tnCuvi4jeb1lGSiSSrrpbjnyfEq1YfObLUe3CrLBnQhaS02OIrD4zjmg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Morning light hitting a coffee cup on a wooden table, creating a peaceful and quiet cafe scene. The color palette is earthy and sophisticated, with warm beige and coffee tones. The mood is calm and unhurried." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ehyAuszIZES01kmiubSWTtyoqLuX2zYCZppKD-zhjaqAUU1fub_J_6CpujC_S23VjW-kROB9ywkVbS6Qh12HKYuH6M2nEQZOhjS9tRFh9Qz9v2LBJ48MW1K86azmbTwvbA6DLgBX-5EXSjBgO2-Sq9hPB6kbPE1AtHGFcQDXGyGtrQ9QVMRr2UxgjwYSFX2SO7nET5N9z1JIIM7qKSvsGP2haxKUWWd9zewPuR-UEPWPmtEhcKo9wArlBtQljpFvGmFq0iR81iA"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Barista at work in a premium cafe environment, preparing a pourover coffee. The background is softly blurred, focusing on the careful hand movements and the stream of hot water. The aesthetic is tactile and artisanal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhISy65YXFHEjIkutK2aaJ_dPq7abNLR8Jm5fn9jBIQWG55O6CstQN4gcx1KiSqyq2ayLQnHr9BidmtYwA-kY62mqYKkM3XvzgzpMp2VrA65bMaxDN8A_MkInLEHsEXn6BEXb1V4BFW2APLSudfkNuXExPGXoaPKJ26voEgF-_SRwB2zxJiY_1B4mzU2VzEN8ROyIs0z0P4W4ZLMJVigX0RfODCZQxV9mDXvdjCO_omJRGXVzrixrsBsvjDB10iSPcR5a5g8HtG_E"/>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-xl px-margin-mobile bg-surface">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-center mb-md">Guest Experiences</h2>
+<div class="flex overflow-x-auto gap-md pb-md scrolling-touch hide-scrollbar snap-x">
+<div class="min-w-[85%] snap-center bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex text-on-tertiary-fixed-variant mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-4 leading-relaxed">
+                        "The most peaceful corner of the city. The latte art is exceptional, but the atmosphere is what keeps me coming back every Sunday."
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed"></div>
+<span class="font-label-md text-primary">Julian R.</span>
+</div>
+</div>
+<div class="min-w-[85%] snap-center bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex text-on-tertiary-fixed-variant mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-on-surface-variant italic mb-4 leading-relaxed">
+                        "The sourdough toast and the single-origin pourover were a revelation. A truly high-end experience without the pretension."
+                    </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed"></div>
+<span class="font-label-md text-primary">Sophia L.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl px-margin-mobile bg-surface-container">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-center mb-md">Get in Touch</h2>
+<div class="flex flex-col gap-xl">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">Visit Us</h4>
+<p class="text-on-surface-variant text-body-md">123 Artisan Lane, Espresso District<br/>New York, NY 10012</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">schedule</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">Hours</h4>
+<p class="text-on-surface-variant text-body-md">Mon - Fri: 7am - 7pm<br/>Sat - Sun: 8am - 8pm</p>
+</div>
+</div>
+</div>
+<form class="space-y-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant uppercase ml-1">Full Name</label>
+<input class="w-full bg-secondary-container/20 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant uppercase ml-1">Email Address</label>
+<input class="w-full bg-secondary-container/20 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="your@email.com" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant uppercase ml-1">Message</label>
+<textarea class="w-full bg-secondary-container/20 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="How can we help?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline-md text-headline-md mt-2 shadow-md">
+                        Send Message
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high py-xl px-margin-mobile">
+<div class="flex flex-col items-center text-center">
+<div class="text-headline-md font-headline-md text-primary tracking-tight mb-8">Wadida Café</div>
+<div class="grid grid-cols-2 gap-y-4 gap-x-8 mb-xl">
+<a class="text-on-secondary-fixed-variant font-body-md hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-secondary-fixed-variant font-body-md hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-secondary-fixed-variant font-body-md hover:text-primary transition-colors" href="#">FAQ</a>
+<a class="text-on-secondary-fixed-variant font-body-md hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<div class="flex gap-6 mb-8">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">camera_indoor</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">public</span>
+</div>
+</div>
+<p class="text-label-sm text-on-surface-variant opacity-70">
+                © 2024 Wadida Café. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Simple scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bg-surface-container, .bg-surface-container-lowest').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
